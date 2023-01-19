@@ -1,0 +1,17 @@
+.footer_icons{
+    display: flex;
+    padding: 1rem;
+    gap: 1rem;
+    width: 100%;
+    justify-content: space-around;
+    height: 40vh;
+
+
+    svg{
+      height: 6rem;
+      width: 6rem;;
+      object-fit: cover;
+    }
+    
+    
+}

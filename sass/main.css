@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700&display=swap");
+*, ::after,
+::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Epilogue", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.nav_bar {
+  padding: 1rem;
+}
+.nav_bar nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+img {
+  padding-top: 1.2rem;
+  width: 100vw;
+}
+
+.main_content {
+  padding: 2rem 2rem;
+}
+.main_content .text_field {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 3rem;
+  padding-bottom: 2rem;
+}
+
+p {
+  padding: 0 1.5rem 1.5rem 1.5rem;
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 2.3rem;
+  color: hsl(0deg, 0%, 41%);
+}
+
+button {
+  padding: 1.3rem 2rem;
+  background-color: hsl(0deg, 0%, 8%);
+  border: none;
+  border-radius: 1rem;
+  color: hsl(0deg, 0%, 98%);
+}
+
+.footer_icons {
+  display: flex;
+  padding: 1rem;
+  gap: 1rem;
+  width: 100%;
+  justify-content: space-around;
+  height: 40vh;
+}
+.footer_icons svg {
+  height: 6rem;
+  width: 6rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}/*# sourceMappingURL=main.css.map */
