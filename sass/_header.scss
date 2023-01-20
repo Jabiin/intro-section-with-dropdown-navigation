@@ -1,5 +1,25 @@
+header{
+    @media only screen and (min-width: $bp-desktop){
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+        grid-template-areas:
+        "txt     img"
+        ;
+    }
+}
+
+.hero_img{
+    @media only screen and (min-width: $bp-desktop){
+        grid-area: img;
+    }
+}
+
 
 img{
     padding-top: 1.2rem;
     width: 100vw;
+    @media only screen and (min-width: $bp-desktop){
+        width: 40vw;
+    }
 }

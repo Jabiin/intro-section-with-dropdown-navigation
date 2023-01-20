@@ -1,10 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700&display=swap');
 
-// variables
+// variables style duide
 
 $Almost-White: hsl(0, 0%, 98%);
 $Medium-Gray: hsl(0, 0%, 41%);
 $Almost-Black: hsl(0, 0%, 8%);
+
+// break points
+
+$bp-desktop: 1440px;
+
+
+
 
 *,::after,
 ::before{
@@ -16,7 +23,9 @@ $Almost-Black: hsl(0, 0%, 8%);
 
 html{
     font-size: 62.5%;
+    box-sizing: border-box
 }
+
 
 .wrapper{
     display: grid;

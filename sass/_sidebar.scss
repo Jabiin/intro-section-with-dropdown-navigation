@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.sidebar{
+    position: absolute;
+    float: right;
+    right: 0;
+    width: 20.2rem;
+    background-color: rgb(255, 255, 255);
+    height: 100vh;
+    transition: all 0.3s ease-in-out;
+}
+
+.sidebar-hidden{
+    transform: translateX(30rem);
+    
+}
+
+.sidebar_click{
+    float: right;
+    text-align: end;
+    right: 0;
+   background-color:  rgb(255, 255, 255);
+   
+}
+.dropdown_menu{
+    display: flex;
+    flex-direction: column;
+    height: 23vh;
+    align-items: flex-start;
+    padding-top: 1rem;
+}
+
+ul{
+    li{
+        list-style-type: none;
+        padding: 1rem;
+        font-size: 2rem;
+        text-align: start;
+    }
+}
+
+.log{
+    align-self: center;
+    padding: 2rem 0;
+    text-align: center;
+    .register{
+        background-color: rgb(255, 255, 255);
+        border-radius: 1.5rem;
+        padding: 1rem 4rem;
+        border-color: hsl(0, 0%, 41%);
+        border: solid;
+        color: hsl(0, 0%, 41%);
+    }
+}
+
+.closemenu{
+    display: none;
+}
