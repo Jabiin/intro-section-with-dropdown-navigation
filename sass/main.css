@@ -45,6 +45,10 @@ html {
   transform: translateX(30rem);
 }
 
+.sidebar-none {
+  display: none;
+}
+
 .sidebar_click {
   float: right;
   text-align: end;
