@@ -17,5 +17,6 @@ closeMenu.addEventListener('click', () => {
     if (closeMenu.style.display = 'none') {
         clickMenu.style.display = 'block'
     }
-    bar.classList.remove('sidebar-hidden');
+    bar.classList.remove('sidebar-hidden'),
+    bar.classList.remove('sidebar-none')
 });
