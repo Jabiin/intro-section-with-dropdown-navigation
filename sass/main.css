@@ -9,6 +9,7 @@
 
 html {
   font-size: 62.5%;
+  box-sizing: border-box;
 }
 
 .wrapper {
@@ -17,20 +18,106 @@ html {
 }
 
 .nav_bar {
-  padding: 1rem;
+  padding: 3rem;
 }
 .nav_bar nav {
   display: flex;
   justify-content: space-between;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.sidebar {
+  position: absolute;
+  float: right;
+  right: 0;
+  width: 20.2rem;
+  background-color: rgb(255, 255, 255);
+  height: 100vh;
+  transition: all 0.3s ease-in-out;
+}
+
+.sidebar-hidden {
+  transform: translateX(30rem);
+}
+
+.sidebar_click {
+  float: right;
+  text-align: end;
+  right: 0;
+  background-color: rgb(255, 255, 255);
+}
+
+.dropdown_menu {
+  display: flex;
+  flex-direction: column;
+  height: 23vh;
+  align-items: flex-start;
+  padding-top: 1rem;
+}
+
+ul li {
+  list-style-type: none;
+  padding: 1rem;
+  font-size: 2rem;
+  text-align: start;
+}
+
+.log {
+  align-self: center;
+  padding: 2rem 0;
+  text-align: center;
+}
+.log .register {
+  background-color: rgb(255, 255, 255);
+  border-radius: 1.5rem;
+  padding: 1rem 4rem;
+  border-color: hsl(0deg, 0%, 41%);
+  border: solid;
+  color: hsl(0deg, 0%, 41%);
+}
+
+.closemenu {
+  display: none;
+}
+
+@media only screen and (min-width: 1440px) {
+  header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    grid-template-areas: "txt     img";
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .hero_img {
+    grid-area: img;
+  }
+}
+
 img {
   padding-top: 1.2rem;
   width: 100vw;
 }
+@media only screen and (min-width: 1440px) {
+  img {
+    width: 40vw;
+  }
+}
 
 .main_content {
   padding: 2rem 2rem;
+}
+@media only screen and (min-width: 1440px) {
+  .main_content {
+    grid-area: txt;
+    padding: 10rem;
+  }
 }
 .main_content .text_field {
   display: flex;
@@ -38,10 +125,22 @@ img {
   align-items: center;
   justify-content: center;
 }
+@media only screen and (min-width: 1440px) {
+  .main_content .text_field {
+    justify-items: start;
+    height: 30vh;
+  }
+}
 
 h1 {
   font-size: 3rem;
   padding-bottom: 2rem;
+}
+@media only screen and (min-width: 1440px) {
+  h1 {
+    align-self: flex-start;
+    font-size: 8rem;
+  }
 }
 
 p {
@@ -51,6 +150,15 @@ p {
   line-height: 2.3rem;
   color: hsl(0deg, 0%, 41%);
 }
+@media only screen and (min-width: 1440px) {
+  p {
+    text-align: left;
+    align-self: flex-start;
+    padding: 0 1.5rem 2.5rem 0;
+    line-height: 2.9rem;
+    font-size: 2rem;
+  }
+}
 
 button {
   padding: 1.3rem 2rem;
@@ -59,6 +167,12 @@ button {
   border-radius: 1rem;
   color: hsl(0deg, 0%, 98%);
 }
+@media only screen and (min-width: 1440px) {
+  button {
+    align-self: flex-start;
+    padding: 1.8rem 2.3rem;
+  }
+}
 
 .footer_icons {
   display: flex;
@@ -66,7 +180,7 @@ button {
   gap: 1rem;
   width: 100%;
   justify-content: space-around;
-  height: 40vh;
+  height: 20vh;
 }
 .footer_icons svg {
   height: 6rem;
